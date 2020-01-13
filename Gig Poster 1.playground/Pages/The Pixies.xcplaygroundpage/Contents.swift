@@ -53,5 +53,24 @@ canvas.drawEllipse(at: Point(x:40+40*y, y:360-40*x-40*y), width: 35, height: 35)
 }
 }
 
+
+
+
+canvas.drawText(message: "pixies", at:Point(x:12.5, y:415), size: 66, kerning: 2)
+
+
+
+
+
+
+for j in 1...7 {
+    canvas.drawLine(from: Point(x:j*50, y:0), to: Point(x:j*50, y: 600))
+}
+
+for m in 1...11 {
+    canvas.drawLine(from: Point(x:0,y:m*50), to: Point(x:400,y:m*50))
+}
+
+
 PlaygroundPage.current.liveView = canvas
 
