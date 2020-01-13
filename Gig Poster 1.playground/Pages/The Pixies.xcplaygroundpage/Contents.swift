@@ -44,10 +44,14 @@ canvas.drawEllipse(at: Point(x:40*times, y:ytimes*40), width: 35, height: 35)
 }
 
 
+canvas.fillColor = offWhite
+for y in 0...8{
+    
+for x in 0...8-y {
+canvas.drawEllipse(at: Point(x:40+40*y, y:360-40*x-40*y), width: 35, height: 35)
 
-
-
-
+}
+}
 
 PlaygroundPage.current.liveView = canvas
 
