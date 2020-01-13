@@ -34,14 +34,20 @@ canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
 
 canvas.fillColor = black
 canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 400)
-canvas.drawEllipse(at: Point(x:0, y:0), width: 35, height: 35)
-/*:
- ## Use Source Control
- 
- Remember to commit and push your work before 11:30 AM on Monday, January 13, 2020, please.
+canvas.fillColor = limeGreen
+canvas.drawShapesWithBorders = false
 
- ## Template code
- The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
- */
+for ytimes in 0...10{
+for times in 0...12{
+canvas.drawEllipse(at: Point(x:40*times, y:ytimes*40), width: 35, height: 35)
+}
+}
+
+
+
+
+
+
+
 PlaygroundPage.current.liveView = canvas
 
