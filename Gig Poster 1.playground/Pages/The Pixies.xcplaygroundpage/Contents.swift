@@ -28,6 +28,7 @@ let canvas = Canvas(width: 400, height: 600)
 let offWhite = Color(hue: 81, saturation: 5, brightness: 88, alpha: 100)
 let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 let black = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+let textWhite = Color(hue: 84, saturation: 4, brightness: 89, alpha: 100)
 // Begin your solution here...
 canvas.fillColor = limeGreen
 canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
@@ -51,16 +52,26 @@ for x in 0...8-y {
 canvas.drawEllipse(at: Point(x:40+40*y, y:360-40*x-40*y), width: 35, height: 35)
 
 }
+    
 }
 
 
 
 
 canvas.drawText(message: "pixies", at:Point(x:12.5, y:415), size: 66, kerning: 2)
+canvas.drawText(message: "saturday", at: Point(x:15, y:552.5), size: 10)
+canvas.drawText(message: "december 13 1986", at: Point(x:15, y:537.5), size: 10)
+canvas.drawText(message: "9 pm over 21", at: Point(x:15, y:522.5), size: 10)
 
 
+canvas.drawText(message: "at the rat", at: Point(x:280, y:552.5), size: 10)
+canvas.drawText(message: "528 commonwealth", at: Point(x:280, y:537.5), size: 10)
+canvas.drawText(message: "boston,mass.", at: Point(x:280, y:522.5), size: 10)
 
-
+canvas.textColor = textWhite
+canvas.drawText(message: "with", at: Point(x:280, y:452.5), size: 13)
+canvas.drawText(message: "throwing muses", at: Point(x:280, y:437.5), size: 13)
+canvas.drawText(message: "big dipper", at: Point(x:280, y:422.5), size: 13)
 
 
 for j in 1...7 {
